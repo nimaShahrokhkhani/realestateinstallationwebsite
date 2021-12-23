@@ -1,11 +1,11 @@
 import axios from 'axios';
-let baseUrl = 'http://localhost:3600/';
+let baseUrl = 'http://api.gilanfile.ir/';
 
 const instance = axios.create({
     baseURL: baseUrl
 });
 
-let installationUrl = 'http://localhost:3650/';
+let installationUrl = 'http://rapi.gilanfile.ir/';
 
 const installationInstance = axios.create({
     baseURL: installationUrl
@@ -13,10 +13,9 @@ const installationInstance = axios.create({
 
 export default class Services {
 
-    static baseUrl = 'http://localhost:3500/';
 
     static signIn(requestData) {
-        return instance.post(`/login`, {
+        return instance.post(`/base/login`, {
             username: requestData.username,
             password: requestData.password,
         })

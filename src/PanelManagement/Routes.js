@@ -9,7 +9,7 @@ export default class Routes extends Component {
         return (
             <Router history={history}>
                 <Switch>
-                    <Route path="/PanelManagement" exact component={Configs} />
+                    <Route path="/" exact component={Configs} />
                 </Switch>
             </Router>
         )
