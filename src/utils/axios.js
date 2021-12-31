@@ -1,5 +1,5 @@
 import axios from 'axios';
-let baseUrl = 'http://api.gilanfile.ir/';
+let baseUrl = 'https://gilanfile.ir/';
 
 const instance = axios.create({
     baseURL: baseUrl
